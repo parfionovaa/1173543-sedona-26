@@ -23,19 +23,19 @@
   </header>
   <main>
 
-    <h1>Welcome to the gorgeous sedona</h1>
-<div>
-  
-  <img src="img/intro-welcome.svg" width="460" height="354" alt="шрифт приветствие">
-  <img src="img/intro-mask.svg" width="1200" height="60" alt="фигурная планка">
-</div>
+    <h1 class="visually-hidden">Welcome to the gorgeous sedona</h1>
+    <div>
+
+      <img src="img/intro-welcome.svg" width="460" height="354" alt="шрифт приветствие">
+      <img src="img/intro-mask.svg" width="1200" height="60" alt="фигурная планка">
+    </div>
 
     <p>Седона — небольшой городок в Аризоне, <br>
       заслуживающий большего!</p>
     <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
     <section>
-      <h2>Настоящий городок</h2>
+      <h2 class="visually-hidden">Настоящий городок</h2>
 
       <table>
         <tr>
@@ -66,7 +66,8 @@
         </tr>
 
         <tr>
-          <td colspan="2"><img src="img/photoMountain.jpg" width="800" height="256" alt="фотография естественного моста в горе">
+          <td colspan="2"><img src="img/photoMountain.jpg" width="800" height="256"
+              alt="фотография естественного моста в горе">
           </td>
           <td>
             <p>Там есть <br>Мост дьявола</p>
@@ -96,17 +97,50 @@
     </section>
 
     <section>
-    
+
       <b>Заинтересовались?</b>
       <p>Укажите предполагаемые даты поездки, <br>
         и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
       <button type="button">поиск гостинницы в седоне</button>
-      <!-- Здесь будет форма -->
+
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="date-check-in">Дата заезда:</label>
+          <input type="text" name="check-in" id="date-check-in" placeholder="24 апреля 2017">
+          <button type="button"> <img src="img/calendar.svg" alt="calendar"> </button>
+        </p>
+        <p>
+          <label for="date-check-out">Дата выезда:</label>
+          <input type="text" name="check-out" id="date-check-out" placeholder="4 июля 2017">
+          <button type="button"> <img src="img/calendar.svg" alt="calendar"> </button>
+        </p>
+
+        <p>
+          <label for="user-adult">Взрослые:</label>
+
+          <button type="button">-</button>
+          <input type="number" min="1" max="100" value="1" name="adult" id="user-adult">
+          <button type="button">+</button>
+
+          <label for="user-child">Дети:</label>
+
+          <button type="button">-</button>
+          <input type="number" min="0" max="100" value="0" name="child" id="user-child">
+          <button type="button">+</button>
+        </p>
+
+
+        <button type="submit">
+          Найти
+        </button>
+      </form>
+
+
     </section>
 
     <section>
-      <h2>Карта Maps</h2>
+      <h2 class="visually-hidden">Карта Maps</h2>
       <figure>
         <img src="img/map.jpg" width="1200" height="470" alt="Большая карта местности">
       </figure>
@@ -127,11 +161,12 @@
         <li><a href="#"><img src="img/fb-icon.svg" width="17" height="15" alt="группа в Фейсбук"></a></li>
         <li><a href="#"><img src="img/youtube.svg" width="17" height="15" alt="группа в YouTube"></a></li>
       </ul>
-      <!-- все иконки должны быть на синих плашках #81b3d2 46x48px (реализация на css)-->
+    
     </div>
     <p>
       Website by
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="40" alt="Логотип  HTML Academy"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="40"
+          alt="Логотип  HTML Academy"></a>
     </p>
   </footer>
 
