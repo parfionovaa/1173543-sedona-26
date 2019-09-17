@@ -107,20 +107,24 @@
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="date-check-in">Дата заезда:</label>
-          <input type="text" name="check-in" id="date-check-in" placeholder="24 апреля 2017">
-          <button type="button"> <img src="img/calendar.svg" alt="calendar"> </button>
+          <div>
+            <input type="text" name="check-in" id="date-check-in" placeholder="24 апреля 2017">
+            <button type="button"> <img src="img/calendar.svg" alt="calendar"> </button>
+          </div>
         </p>
         <p>
           <label for="date-check-out">Дата выезда:</label>
-          <input type="text" name="check-out" id="date-check-out" placeholder="4 июля 2017">
-          <button type="button"> <img src="img/calendar.svg" alt="calendar"> </button>
+          <div>
+            <input type="text" name="check-out" id="date-check-out" placeholder="4 июля 2017">
+            <button type="button"> <img src="img/calendar.svg" alt="calendar"> </button>
+          </div>
         </p>
 
         <p>
           <label for="user-adult">Взрослые:</label>
 
           <button type="button">-</button>
-          <input type="number" min="1" max="100" value="1" name="adult" id="user-adult">
+          <input type="number" min="1" max="100" value="2" name="adult" id="user-adult">
           <button type="button">+</button>
 
           <label for="user-child">Дети:</label>
@@ -142,7 +146,7 @@
     <section>
       <h2 class="visually-hidden">Карта Maps</h2>
       <figure>
-        <img src="img/map.jpg" width="1200" height="470" alt="Большая карта местности">
+        <img src="img/map.jpg" width="1200" height="470" alt="Большая карта местности Sedona">
       </figure>
     </section>
 
@@ -157,16 +161,19 @@
     <div>
       <p>Давайте дружить!</p>
       <ul>
-        <li><a href="#"><img src="img/twitter.svg" width="17" height="15" alt="группа в Твиттер"></a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" width="17" height="15" alt="группа в Фейсбук"></a></li>
-        <li><a href="#"><img src="img/youtube.svg" width="17" height="15" alt="группа в YouTube"></a></li>
+        <li><a href="#" aria-label="группа sedona в Твиттер"><img src="img/twitter.svg" width="17" height="15"
+              alt="группа в Твиттер"></a></li>
+        <li><a href="#" aria-label="группа sedona в Фейсбук"><img src="img/fb-icon.svg" width="17" height="15"
+              alt="группа в Фейсбук"></a></li>
+        <li><a href="#" aria-label="группа sedona в YouTube"><img src="img/youtube.svg" width="17" height="15"
+              alt="группа в YouTube"></a></li>
       </ul>
-    
+
     </div>
     <p>
       Website by
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="40"
-          alt="Логотип  HTML Academy"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="интенсив HTML Academy Профессиональный HTML и CSS, уровень 1"><img src="img/logo-htmlacademy.svg" width="115"
+          height="40" alt="Логотип  HTML Academy"></a>
     </p>
   </footer>
 
