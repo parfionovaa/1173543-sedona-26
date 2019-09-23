@@ -4,15 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <div>
-      <img src="img/logo-sedona.svg" width="140" height="70" alt="Логотип  «Седона» треугольник">
-    </div>
-    <nav>
-      <ul>
+    <nav class="main-navigation">
+      <a class="header-logo">
+        <img src="img/logo-sedona.svg" width="140" height="70" alt="Логотип  «Седона» треугольник">
+      </a>
+      <ul class="site-navigation">
         <li><a href="">Информация</a></li>
         <li><a href="">Фото и видео</a></li>
 
@@ -21,10 +24,11 @@
       </ul>
     </nav>
   </header>
-  <main>
+
+  <main class="container">
 
     <h1 class="visually-hidden">Welcome to the gorgeous sedona</h1>
-    <div>
+    <div class="main-fon">
 
       <img src="img/intro-welcome.svg" width="460" height="354" alt="шрифт приветствие">
       <img src="img/intro-mask.svg" width="1200" height="60" alt="фигурная планка">
@@ -34,7 +38,7 @@
       заслуживающий большего!</p>
     <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
-    <section>
+    <section class="attractions">
       <h2 class="visually-hidden">Настоящий городок</h2>
 
       <table>
@@ -96,46 +100,48 @@
       </table>
     </section>
 
-    <section>
+    <section class="think-data-offer">
 
-      <b>Заинтересовались?</b>
-      <p>Укажите предполагаемые даты поездки, <br>
+      <b class="interest-title">Заинтересовались?</b>
+      <p class="interst-proviso">Укажите предполагаемые даты поездки, <br>
         и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
-      <button type="button">поиск гостинницы в седоне</button>
+      <button class="form-button" type="button">поиск гостинницы в седоне</button>
 
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
+      <form class="data-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="data-form-item">
           <label for="date-check-in">Дата заезда:</label>
           <div>
-            <input type="text" name="check-in" id="date-check-in" placeholder="24 апреля 2017">
-            <button type="button"> <img src="img/calendar.svg" alt="calendar"> </button>
+            <input class="form-plane" type="text" name="check-in" id="date-check-in" placeholder="24 апреля 2017">
+            <button class="calendar-form-icon" type="button"> <img src="img/calendar.svg" alt="calendar"> </button>
           </div>
         </p>
-        <p>
+        <p class="data-form-item">
           <label for="date-check-out">Дата выезда:</label>
           <div>
-            <input type="text" name="check-out" id="date-check-out" placeholder="4 июля 2017">
-            <button type="button"> <img src="img/calendar.svg" alt="calendar"> </button>
+            <input class="form-plane" type="text" name="check-out" id="date-check-out" placeholder="4 июля 2017">
+            <button class="calendar-form-icon" type="button"> <img class="color-calc" src="img/calendar.svg" alt="calendar"> </button>
           </div>
         </p>
 
-        <p>
+        <p class="guest-form-item">
           <label for="user-adult">Взрослые:</label>
 
-          <button type="button">-</button>
-          <input type="number" min="1" max="100" value="2" name="adult" id="user-adult">
-          <button type="button">+</button>
+          <button class="button-maths" type="button">-</button>
+          <input class="form-plane-value" type="number" min="1" max="100" value="2" name="adult" id="user-adult">
+          <button class="button-maths" type="button">+</button>
+        </p>
 
+        <p class="guest-form-item">
           <label for="user-child">Дети:</label>
 
-          <button type="button">-</button>
-          <input type="number" min="0" max="100" value="0" name="child" id="user-child">
-          <button type="button">+</button>
+          <button class="button-maths" type="button">-</button>
+          <input class="form-plane-value" type="number" min="0" max="100" value="0" name="child" id="user-child">
+          <button class="button-maths" type="button">+</button>
         </p>
 
 
-        <button type="submit">
+        <button class="form-button-find" type="submit">
           Найти
         </button>
       </form>
@@ -153,27 +159,28 @@
 
   </main>
 
-  <footer>
-    <p>
+  <footer class="main-footer">
+    <p class="footer-hashtag">
       #visitSEDONA
     </p>
 
-    <div>
-      <p>Давайте дружить!</p>
+    <div class="footer-social">
+      <p class="visually-hidden">Давайте дружить!</p>
       <ul>
-        <li><a href="#" aria-label="группа sedona в Твиттер"><img src="img/twitter.svg" width="17" height="15"
-              alt="группа в Твиттер"></a></li>
-        <li><a href="#" aria-label="группа sedona в Фейсбук"><img src="img/fb-icon.svg" width="17" height="15"
-              alt="группа в Фейсбук"></a></li>
-        <li><a href="#" aria-label="группа sedona в YouTube"><img src="img/youtube.svg" width="17" height="15"
-              alt="группа в YouTube"></a></li>
+        <li class="social-button"><a href="#" aria-label="группа sedona в Твиттер"><img src="img/twitter.svg" width="17"
+              height="15" alt="группа в Твиттер"></a></li>
+        <li class="social-button"><a href="#" aria-label="группа sedona в Фейсбук"><img src="img/fb-icon.svg" width="17"
+              height="15" alt="группа в Фейсбук"></a></li>
+        <li class="social-button"><a href="#" aria-label="группа sedona в YouTube"><img src="img/youtube.svg" width="17"
+              height="15" alt="группа в YouTube"></a></li>
       </ul>
 
     </div>
-    <p>
+    <p class="footer-copyright">
       Website by
-      <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="интенсив HTML Academy Профессиональный HTML и CSS, уровень 1"><img src="img/logo-htmlacademy.svg" width="115"
-          height="40" alt="Логотип  HTML Academy"></a>
+      <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"
+        aria-label="интенсив HTML Academy Профессиональный HTML и CSS, уровень 1"><img src="img/logo-htmlacademy.svg"
+          width="115" height="40" alt="Логотип  HTML Academy"></a>
     </p>
   </footer>
 
